@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Desktop from "../../public/images/bg-sidebar-desktop.svg";
 import Mobile from "../../public/images/bg-sidebar-mobile.svg";
 
@@ -78,7 +79,7 @@ export default function Home() {
 
       {/* next section */}
       <section className="px-5 py-4 items-end justify-end bg-white fixed bottom-0 flex w-full h-20">
-        <button className="bg-[#02295a] py-3 px-5 rounded-md text-white">Next Step</button>
+        <Link href="/select-plan"><button className="bg-[#02295a] py-3 px-5 rounded-md text-white">Next Step</button></Link>
       </section>
     </main>
   );

@@ -42,7 +42,7 @@ export default function Home() {
                 id="firstname"
                 type="text"
                 placeholder="e.g. Stephen King"
-                className="text-[#9699ab] pl-5 w-full rounded-md py-2 border border-[#9699ab]"
+                className="text-[#9699ab] pl-5 font-medium w-full rounded-md py-2 border border-[#9699ab]"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
                 id="email"
                 type="email"
                 placeholder="e.g. stephenking@lorem.com"
-                className="text-[#9699ab] pl-5 w-full rounded-md py-2 border border-[#9699ab]"
+                className="text-[#9699ab] pl-5 font-medium w-full rounded-md py-2 border border-[#9699ab]"
               />
             </div>
           </div>
@@ -68,12 +68,17 @@ export default function Home() {
                 id="number"
                 type="number"
                 placeholder="e.g. +1 234 567 890"
-                className="text-[#9699ab] pl-5 w-full rounded-md py-2 border border-[#9699ab]"
+                className="text-[#9699ab] pl-5 font-medium w-full rounded-md py-2 border border-[#9699ab]"
               />
             </div>
           </div>
           </div>
         </form>
+      </section>
+
+      {/* next section */}
+      <section className="px-5 py-4 items-end justify-end bg-white fixed bottom-0 flex w-full h-20">
+        <button className="bg-[#02295a] py-3 px-5 rounded-md text-white">Next Step</button>
       </section>
     </main>
   );

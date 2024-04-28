@@ -5,12 +5,28 @@ import Mobile from "../../public/images/bg-sidebar-mobile.svg";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <Image src={Desktop} alt="" className="hidden md:block" />
+    <main className="relative md:px-5">
+      <Image src={Desktop} alt="" className="hidden md:block md:h-[100vh]" />
       <Image src={Mobile} alt="" className="w-full md:hidden" />
 
-      {/* Routing buttons */}
-      <div className="text-white flex justify-between gap-5 absolute top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+      {/* Routing buttons for mobile */}
+      <div className="text-white flex justify-between gap-5 absolute md:hidden top-12 left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+        <button className="flex justify-center items-center p-4 w-3 h-3 border border-white rounded-full">
+          1
+        </button>
+        <button className="flex justify-center items-center p-4 w-3 h-3 border border-white rounded-full">
+          2
+        </button>
+        <button className="flex justify-center items-center p-4 w-3 h-3 border border-white rounded-full">
+          3
+        </button>
+        <button className="flex justify-center items-center p-4 w-3 h-3 border border-white rounded-full">
+          4
+        </button>
+      </div>
+
+      {/* Routing buttons for desktop */}
+      <div className="text-white md:flex flex-col gap-5 hidden absolute top-20 left-14">
         <button className="flex justify-center items-center p-4 w-3 h-3 border border-white rounded-full">
           1
         </button>
@@ -26,7 +42,7 @@ export default function Home() {
       </div>
 
       {/* form div */}
-      <section className="px-5 flex justify-center items-center">
+      <section className="md:hidden px-5 flex justify-center items-center">
         <form className="px-5 py-7 bg-[#fff] text-left w-[90%] rounded-lg absolute top-[58%]">
           <h1 className="text-[#02295a] text-2xl font-bold">Personal info</h1>
           <p className="text-[#9699ab]">
@@ -78,7 +94,7 @@ export default function Home() {
       </section>
 
       {/* next section */}
-      <section className="px-5 py-4 items-end justify-end bg-white fixed bottom-0 flex w-full h-20">
+      <section className="px-5 py-4 items-end justify-end bg-white fixed md:hidden bottom-0 flex w-full h-20">
         <Link href="/select-plan"><button className="bg-[#02295a] py-3 px-5 rounded-md text-white">Next Step</button></Link>
       </section>
     </main>

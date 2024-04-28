@@ -83,9 +83,11 @@ export default function SelectPlan() {
         <Link href="/">
           <button className="py-3 font-medium text-[#9699ab]">Go Back</button>
         </Link>
+        <Link href="/add-ons">
         <button className="bg-[#02295a] py-3 px-5 rounded-md text-white">
           Next Step
         </button>
+        </Link>
       </section>
     </main>
   );
